@@ -9,23 +9,23 @@ def cutHeader(myFile):
 	with open(myFile, 'rU') as csvfile:
 		r = csv.reader(csvfile, dialect=csv.excel_tab, delimiter=',', quotechar='|')
 		fileSeg = myFile.split('/')
+		underscored = fileSeg[2].split('_')
+		print underscored
+		dateLow = underscored[2]
+		dateHigh = underscored[3] 
 
-			writePath = fileSeg[0] + "/TRIM_" + fileSeg[1]
-			with open(writePath, 'w') as fp:
-				w = csv.writer(fp, delimiter=',')
-				count = 0
-				for row in r:
-					# print count
-					# print row
-					count += 1
-					if count > 4 and count != 6:
-						# print row
-						if row[0] == '"T"':
-							break
-						currRow = [row[1].replace('"',''), row[2].replace('"',''), row[3].replace('"','')]
-						w.writerow(currRow) #write the 5th line
-						# print row
-				print "Wrote file " + str(myFile)
+		writePath = fileSeg[0] + "/" + fileSeg[1] + "/1_trimmed/" + dateLow + "-" + dateHigh[0:8] + "_TRIM_clearedDemand.csv"
+		with open(writePath, 'w') as fp:
+			w = csv.writer(fp, delimiter=',')
+			count = 0
+			for row in r:
+				count += 1
+				if count > 4 and count != 6:
+					if row[0] == '"T"':
+						break
+					currRow = [row[1].replace('"',''), row[2].replace('"',''), row[3].replace('"','')]
+					w.writerow(currRow) #write the 5th line
+			print "Rewrote file " + str(myFile)
 
 if __name__ == '__main__':
 	if len(sys.argv) > 1:
@@ -41,7 +41,7 @@ if __name__ == '__main__':
 	files = os.listdir(folder)
 	print "Files: " + str(files)
 	numFiles = len(files)
-	for i in xrange(numFiles):
+	for i in xrange(2,numFiles):
 		path = folder + "/" + files[i]
 		cutHeader(path)
 

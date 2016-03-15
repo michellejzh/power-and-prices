@@ -4,7 +4,7 @@ import sys
 import fileinput
 
 
-def constructBidStack(myFile, demandPath):
+def constructBidStack(myFile, demandFolder):
 	print "Constructing bid stack..."
 	fileReader = open(myFile, "rU")
 	reader  = csv.DictReader(fileReader)
@@ -40,35 +40,72 @@ def constructBidStack(myFile, demandPath):
 	myFile = (myFile.split('/'))[1]
 	date = myFile[:8]
 	saveDayHours(date, hours)
-	findPriceChanges(date,hours, demandPath)
+	findPriceChanges(date,hours, demandFolder)
 
 def getKey(item):
 	return float(item[0])
 
+def findDemandFile(demandFolder, date):
+	# get the correct year folder
+	# for each file, 
+		# pull the date range
+		# if the date is in the range,
+			#use the file
+	# if date not found,
+		# return an error!!!!!
+
+	myYear = date[0:3]
+	yearFolders = os.listdir(demandFolder)
+	for y in range(len(yearFolders)):
+		if myYear in yearFolders[y]:
+			files = os.listdir(demandFolder + "/" + yearFolders[y])
+			for i in xrange(2,len(files)):
+				currFile = files[i]
+				beginDate = int(currFile[:8])
+				endDate = int(currFile[9:17])
+				intDate = int(date)
+				if intDate >= beginDate:
+					if intDate <= endDate:
+						print "Returning " + str(demandFolder + yearFolders[y] + "/" + currFile)
+						return demandFolder + "/" + yearFolders[y] + "/" + currFile
+
+	print "ERROR: Demand file for date " + str(date) + " not found."
+	sys.exit()
 
 
-def findPriceChanges(date, hours, demandPath):
+
+
+def findPriceChanges(date, hours, demandFolder):
 	print "\n\nFinding incremental price changes for date " + str(date) + "..."
 	# load the file that has the cleared demand on it, by date
-	demandFile = demandPath + "/" + date + "cleareddemand.csv"
+	demandFile = findDemandFile(demandFolder, date)
 	print "Opening file " + str(demandFile)
 	fileReader = open(demandFile, "rU")
 	reader  = csv.DictReader(fileReader)
 	demands = {}
 
+	myDate = date[4:6] + "/" + date[6:] + "/" + date[0:4]
 	# Find corresponding demand for each hour
 	for row in reader:
-		demands[int(row['Hour Ending'])] = float(row['Day-Ahead Cleared Demand'])
+		print row
+		if row['Date'] == myDate:
+			demands[int(row['Hour Ending'])] = float(row['Day-Ahead Cleared Demand'])
 
-	# wind added == demand reduced, since you effectively shift to the left
-	# but for our graphical purposes, insert on the far left as well?
-		# --> no, runtime gets bad
+	yearDateDir = "add-wind-prices/" + date[0:4] + "/"
+	if not os.path.exists(yearDateDir):
+		os.makedirs(yearDateDir)
+
+	yearDateDir = "add-wind-prices/" + date[0:4] + "/" + date + "/"
+	if not os.path.exists(yearDateDir):
+		os.makedirs(yearDateDir)
 
 	# for i in xrange(1,25):
 	for i in xrange(1,2):
 		hourDemand = demands[i]
 		hourSupply = hours[i]
-		hourFile = "add-wind-prices/" + date + "_" + str(i) + "_adjWindPrices.csv"
+		currYear = date[0:4]
+
+		hourFile = yearDateDir + date + "_" + str(i) + "_adjWindPrices.csv"
 
 		# go through the (price,quantity) pairs until you hit cleared demand
 		supplySum = 0.0
@@ -93,14 +130,16 @@ def findPriceChanges(date, hours, demandPath):
 			print "Writing to file " + hourFile
 			writer.writerow([0,hourSupply[p][0]])
 
-			# PROBLEM: PRICES ARE INCREASING. WRONG DIRECTION!!!
-			# for pair in hourSupply:
 			for p in xrange(clearingIndex, -1, -1):
 				pair = hourSupply[p]
 				print "Pair in decrement: " + str(pair)
 				remainder = saveMWIncrement(writer, hourFile, windAdded, float(pair[1]), float(pair[0]), remainder)
 				windAdded += (float(pair[1]) - remainder)
 				if windAdded == hourDemand:
+					print "Demand fully met by wind. Ending write..."
+					break
+				if pair[0] == 0.0 or pair[0] == '0':
+					print "Price hit 0. Ending write..."
 					break
 
 # Write the price changes for each bid's MW entirety to the file.
@@ -118,11 +157,17 @@ def saveMWIncrement(writer, writePath, windAdded, quantity, price, remainder):
 
 def saveDayHours(date, hours):
 	print "Saving bids to hours for date " + str(date) + "..."
+
+	yearDateDir = "stacks/" + date[0:4] + "/"
+	if not os.path.exists(yearDateDir):
+		os.makedirs(yearDateDir)
+
+	yearDateDir = "stacks/" + date[0:4] + "/" + date + "/"
+	if not os.path.exists(yearDateDir):
+		os.makedirs(yearDateDir)
+
 	for hour in hours:
-		directory = str(date) + "_stacks/"
-		if not os.path.exists(directory):
-		    os.makedirs(directory)
-		writePath = directory  + str(date) + "_hour" + str(hour) + "_" + "bidStack.csv"
+		writePath = yearDateDir  + str(date) + "_hour" + str(hour) + "_" + "bidStack.csv"
 		print "Writing to path " + writePath 
 		with open(writePath, 'w') as fp:
 			writer = csv.writer(fp, delimiter=',')
@@ -137,7 +182,7 @@ if __name__ == '__main__':
 	if len(sys.argv) > 1:
 		try:
 			folder = str(sys.argv[1])
-			demandPath = str(sys.argv[2])
+			demandFolder = str(sys.argv[2])
 		except ValueError:
 			print "Error: input must be a string"
 			exit()
@@ -150,33 +195,7 @@ if __name__ == '__main__':
 	numFiles = len(files)
 	for i in xrange(numFiles):
 		path = folder + "/" + files[i]
-		constructBidStack(path, demandPath)
-
-
-
-
-# UNNECESSARY FOR THE NEW FORMAT =====================================================
-# def cutHeader(myFile):
-# 	# r = fileinput.input(myFile, inplace=True) # sys.stdout is redirected to the file
-# 	# print r
-# 	# for i in xrange(4):
-# 	# 	r.next() #skip 4 lines
-# 	# print r.next() #print the 5th line
-# 	# r.next() #skip the 6th line
-
-# 	print "Opening", myFile
-# 	with open(myFile, 'rU') as csvfile:
-# 		r = csv.reader(csvfile, dialect=csv.excel_tab, delimiter=',', quotechar='|')
-# 		w = csv.writer(sys.stdout)
-# 		count = 0
-# 		for row in r:
-# 			# print count
-# 			# print row
-# 			count += 1
-# 			if count >= 4 and count != 6:
-# 				w.writerow(row) #write the 5th line
-# 				print row
-# 		print "Rewrote file " + str(myFile)
+		constructBidStack(path, demandFolder)
 
 
 
