@@ -36,7 +36,7 @@ def constructBidStack(myFile, demandPath):
 
 	# sort the lists by price (first item in tuple)
 	for i in xrange(1,25):
-		hours[i] = sorted(hours[i], key=getKey)
+		hours[i] = sorted(hours[i], key=getKey, reverse=False)
 	myFile = (myFile.split('/'))[1]
 	date = myFile[:8]
 	saveDayHours(date, hours)
@@ -48,7 +48,7 @@ def getKey(item):
 
 
 def findPriceChanges(date, hours, demandPath):
-	print "Finding incremental price changes for date " + str(date) + "..."
+	print "\n\nFinding incremental price changes for date " + str(date) + "..."
 	# load the file that has the cleared demand on it, by date
 	demandFile = demandPath + "/" + date + "cleareddemand.csv"
 	print "Opening file " + str(demandFile)
@@ -64,27 +64,56 @@ def findPriceChanges(date, hours, demandPath):
 	# but for our graphical purposes, insert on the far left as well?
 		# --> no, runtime gets bad
 
-	for i in xrange(1,25):
+	# for i in xrange(1,25):
+	for i in xrange(1,2):
 		hourDemand = demands[i]
 		hourSupply = hours[i]
 		hourFile = "add-wind-prices/" + date + "_" + str(i) + "_adjWindPrices.csv"
+
 		# go through the (price,quantity) pairs until you hit cleared demand
-		windAdded = 0
-		for pair in hour:
-			saveMWIncrement(hourFile, windAdded, int(pair[1]), float(pair[0]))
-			windAdded += int(pair[1])
-			if windAdded == demand:
+		supplySum = 0.0
+		clearingIndex = -1
+		# this should go backwards from lowest to highest price
+		for p in xrange(len(hourSupply)): 
+			supplySum += float(hourSupply[p][1])
+			print "Hour supply pair: " + str(hourSupply[p])
+			print "Supply sum: " + str(supplySum)
+			if supplySum >= hourDemand:
+				print "Hour price: " + str(hourSupply[p][0]) 
+				clearingIndex = p
 				break
 
+		windAdded = 0
+		remainder = 0
+
+		# write the header
+		with open(hourFile, 'w') as fp:
+			writer = csv.writer(fp, delimiter=',')
+			writer.writerow(["MW Wind Added", "Price"])	
+			print "Writing to file " + hourFile
+			writer.writerow([0,hourSupply[p][0]])
+
+			# PROBLEM: PRICES ARE INCREASING. WRONG DIRECTION!!!
+			# for pair in hourSupply:
+			for p in xrange(clearingIndex, -1, -1):
+				pair = hourSupply[p]
+				print "Pair in decrement: " + str(pair)
+				remainder = saveMWIncrement(writer, hourFile, windAdded, float(pair[1]), float(pair[0]), remainder)
+				windAdded += (float(pair[1]) - remainder)
+				if windAdded == hourDemand:
+					break
+
 # Write the price changes for each bid's MW entirety to the file.
-def saveMWIncrement(writePath, windAdded, quantity, price):
-	print "Writing to path " + writePath 
-	with open(writePath, 'w') as fp:
-		writer = csv.writer(fp, delimiter=',')
-		writer.writerow(["MW Wind Added", "Price"])	
-	for q in xrange(1,quantity+1):
+def saveMWIncrement(writer, writePath, windAdded, quantity, price, remainder):
+	# print "Writing to path " + writePath
+	roundedQuantity = int(quantity+remainder) # rounds down
+	remainder = (quantity+remainder) - roundedQuantity
+	# with open(writePath, 'a') as fp:
+		# writer = csv.writer(fp, delimiter=',')
+	for q in xrange(1,roundedQuantity+1):
 		row = [windAdded+q, price]
 		writer.writerow(row)
+	return remainder
 
 
 def saveDayHours(date, hours):
@@ -119,7 +148,7 @@ if __name__ == '__main__':
 	files = os.listdir(folder)
 	print "Files: " + str(files)
 	numFiles = len(files)
-	for i in xrange(1, numFiles+1):
+	for i in xrange(numFiles):
 		path = folder + "/" + files[i]
 		constructBidStack(path, demandPath)
 

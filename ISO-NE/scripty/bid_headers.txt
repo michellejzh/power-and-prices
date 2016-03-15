@@ -1,0 +1,65 @@
+row.append('Day')
+row.append('Trading Interval')
+row.append('Masked Lead Participant ID')
+row.append('Masked Asset ID')
+row.append('Must Take Energy')
+row.append('Maximum Daily Energy Available')
+row.append('Economic Maximum')
+row.append('Economic Minimum')
+row.append('Cold Startup Price')
+row.append('Intermediate Startup Price')
+row.append('Hot Startup Price')
+row.append('No Load Price')
+row.append('Segment 1 Price')
+row.append('Segment 1 MW')
+row.append('Segment 2 Price')
+row.append('Segment 2 MW')
+row.append('Segment 3 Price')
+row.append('Segment 3 MW')
+row.append('Segment 4 Price')
+row.append('Segment 4 MW')
+row.append('Segment 5 Price')
+row.append('Segment 5 MW')
+row.append('Segment 6 Price')
+row.append('Segment 6 MW')
+row.append('Segment 7 Price')
+row.append('Segment 7 MW')
+row.append('Segment 8 Price')
+row.append('Segment 8 MW')
+row.append('Segment 9 Price')
+row.append('Segment 9 MW')
+row.append('Segment 10 Price')
+row.append('Segment 10 MW')
+row.append('Claim 10')
+row.append('Claim 30')
+row.append('Unit Status')
+
+
+Fields: ['BeginDate', 'MaskedParticipantId', 'MaskedAssetId', 'MustTakeEnergy', 'MaxDailyEnergy', 'EconomicMax', 'EconomicMin', 'ColdStartPrice', 'IntermediateStartPrice', 'HotStartPrice', 'NoLoadPrice', 'Segments', 'Claim10Mw', 'Claim30Mw', 'UnitStatus']
+
+Fields: ['BeginDate', 'MaskedParticipantId', 'MaskedAssetId', 'MustTakeEnergy', 'MaxDailyEnergy', 'EconomicMax', 'EconomicMin', 'ColdStartPrice', 'IntermediateStartPrice', 'HotStartPrice', 'NoLoadPrice', 'Segments', 'Claim10Mw', 'Claim30Mw', 'UnitStatus']
+
+
+
+
+Traceback (most recent call last):
+  File "getAndSaveBids.py", line 167, in <module>
+    getDates(username,password)
+  File "getAndSaveBids.py", line 19, in getDates
+    getAndSaveDay(date,username,password)
+  File "getAndSaveBids.py", line 58, in getAndSaveDay
+    xml_result = untangle.parse(result)
+  File "//anaconda/lib/python2.7/site-packages/untangle.py", line 143, in parse
+    parser.parse(StringIO(filename))
+  File "//anaconda/lib/python2.7/xml/sax/expatreader.py", line 110, in parse
+    xmlreader.IncrementalParser.parse(self, source)
+  File "//anaconda/lib/python2.7/xml/sax/xmlreader.py", line 125, in parse
+    self.close()
+  File "//anaconda/lib/python2.7/xml/sax/expatreader.py", line 225, in close
+    self.feed("", isFinal = 1)
+  File "//anaconda/lib/python2.7/xml/sax/expatreader.py", line 217, in feed
+    self._err_handler.fatalError(exc)
+  File "//anaconda/lib/python2.7/xml/sax/handler.py", line 38, in fatalError
+    raise exception
+xml.sax._exceptions.SAXParseException: <unknown>:1:908564: unclosed token
+Michelles-MacBook-Pro-5:ISO-NE Michelle$ 

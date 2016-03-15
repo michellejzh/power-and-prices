@@ -49,34 +49,58 @@ def getDAMDemand(date,username,password):
 	base = "https://webservices.iso-ne.com/api/v1.1"
 	path = "/dayaheadhourlydemand/day/"
 	# path = "/dayaheadhourlydemand"
-	path2 = "/location/SYSTEM"
-	# /dayaheadhourlydemand/day/{day}/location/{locationId}
-	url = base + path + date + path2 + ".xml"
 
-	# Call our GET request
-	request = urllib2.Request(url)
-	print "Request to", url
-	base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
-	request.add_header("Authorization", "Basic %s" % base64string)
-	# bad practice but good enough for now
-	ctx = ssl.create_default_context()
-	ctx.check_hostname = False
-	ctx.verify_mode = ssl.CERT_NONE
+	# fill with blank hours. key = zone, value = list; index by (hour - 1)
+	hourLoads = {}
+	hours = [0.0 for x in xrange(24)]
+	for zone in xrange(4000,4009):
+		hourLoads[zone] = hours
 
-	try:
-		result = urllib2.urlopen(request, context=ctx)
-	except urllib2.HTTPError:
-		print "Day " + str(date) + " does not exist. Continuing to next day.."
-		return
+	for zone in xrange(3999,4008):
+		path2 = "/location/" + str(zone)
+		# /dayaheadhourlydemand/day/{day}/location/{locationId}
+		url = base + path + date + path2 + ".xml"
+
+		# Call our GET request
+		request = urllib2.Request(url)
+		print "Request to", url
+		base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
+		request.add_header("Authorization", "Basic %s" % base64string)
+		# bad practice but good enough for now
+		ctx = ssl.create_default_context()
+		ctx.check_hostname = False
+		ctx.verify_mode = ssl.CERT_NONE
+
+		try:
+			result = urllib2.urlopen(request, context=ctx)
+		except urllib2.HTTPError:
+			print "Day " + str(date) + " does not exist. Continuing to next day..."
+			return
 
 
-	result = result.read()
-	print result
-	xml_result = untangle.parse(result)
+		result = result.read()
+		# print result
+		xml_result = untangle.parse(result)
 
-	lines = xml_result.children
-	for line in lines:
-		print str(line.children) + "\n"
+		lines = xml_result.children
+		for line in lines:
+			hr = 0
+			for hour in line.children:
+				# print hour
+				hr += 1
+				# print "-----------------"
+				# print "Hour: " + str(hr)
+				# print hour.BeginDate.cdata
+				currLoad = hour.Load.cdata
+				zoneHours = hourLoads[zone]
+				zoneHours[hr-1] = zoneHours[hr-1] + float(currLoad)
+				hourLoads[zone] = zoneHours
+
+
+	for zone in hourLoads:
+		print "\nZONE: " + str(zone)
+		print hourLoads[zone]
+
 
 
 
@@ -185,6 +209,6 @@ def getAndSaveDay(date,username,password):
 if __name__ == '__main__':
 	username = "michelle_zheng@brown.edu"
 	password = "w00lden1"
-	getDates(username,password)
-	# getDemands(username,password)
+	# getDates(username,password)
+	getDemands(username,password)
 
