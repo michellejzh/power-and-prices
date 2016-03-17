@@ -5,6 +5,7 @@ import fileinput
 
 
 def constructBidStack(myFile, demandFolder):
+	print "\n~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-"
 	print "Constructing bid stack..."
 	fileReader = open(myFile, "rU")
 	reader  = csv.DictReader(fileReader)
@@ -39,34 +40,28 @@ def constructBidStack(myFile, demandFolder):
 		hours[i] = sorted(hours[i], key=getKey, reverse=False)
 	myFile = (myFile.split('/'))[1]
 	date = myFile[:8]
-	saveDayHours(date, hours)
-	findPriceChanges(date,hours, demandFolder)
+	if saveDayHours(date, hours) == 0:
+		findPriceChanges(date,hours, demandFolder)
 
 def getKey(item):
 	return float(item[0])
 
 def findDemandFile(demandFolder, date):
-	# get the correct year folder
-	# for each file, 
-		# pull the date range
-		# if the date is in the range,
-			#use the file
-	# if date not found,
-		# return an error!!!!!
-
-	myYear = date[0:3]
+	myYear = date[0:4]
+	# print "Looking for year " + str(myYear)
 	yearFolders = os.listdir(demandFolder)
 	for y in range(len(yearFolders)):
 		if myYear in yearFolders[y]:
+			print "Located folder: " + yearFolders[y]
 			files = os.listdir(demandFolder + "/" + yearFolders[y])
-			for i in xrange(2,len(files)):
+			for i in xrange(1,len(files)):
 				currFile = files[i]
 				beginDate = int(currFile[:8])
 				endDate = int(currFile[9:17])
 				intDate = int(date)
 				if intDate >= beginDate:
 					if intDate <= endDate:
-						print "Returning " + str(demandFolder + yearFolders[y] + "/" + currFile)
+						# print "Returning " + str(demandFolder + yearFolders[y] + "/" + currFile)
 						return demandFolder + "/" + yearFolders[y] + "/" + currFile
 
 	print "ERROR: Demand file for date " + str(date) + " not found."
@@ -76,7 +71,7 @@ def findDemandFile(demandFolder, date):
 
 
 def findPriceChanges(date, hours, demandFolder):
-	print "\n\nFinding incremental price changes for date " + str(date) + "..."
+	print "Finding incremental price changes for date " + str(date) + "..."
 	# load the file that has the cleared demand on it, by date
 	demandFile = findDemandFile(demandFolder, date)
 	print "Opening file " + str(demandFile)
@@ -85,11 +80,21 @@ def findPriceChanges(date, hours, demandFolder):
 	demands = {}
 
 	myDate = date[4:6] + "/" + date[6:] + "/" + date[0:4]
+	myDateShort = date[4:6] + "/" + date[6:] + "/" + date[2:4]
+	myDateShortest = date[4:6] + "/" + date[6:7] + "/" + date[2:4]
 	# Find corresponding demand for each hour
+	print "Searching for rows with dates " + myDate
 	for row in reader:
-		print row
-		if row['Date'] == myDate:
-			demands[int(row['Hour Ending'])] = float(row['Day-Ahead Cleared Demand'])
+		# print "Row's date: " + str(row['Date'])
+		rowDate = row['Date']
+		try:
+			if rowDate == myDate or rowDate == myDate[1:] or rowDate == myDateShort or rowDate == myDateShort[1:] or rowDate == myDateShortest or rowDate == myDateShortest[1:]:
+				# print "yes write write write"
+				demands[int(row['Hour Ending'])] = float(row['Day-Ahead Cleared Demand'])
+		except ValueError:
+			print "***********************************************************************"
+			print "WARNING: VALUE ERROR FOR VALUE " + str(row['Hour Ending']) + " ON DATE " + str(myDate)
+			print "***********************************************************************"			
 
 	yearDateDir = "add-wind-prices/" + date[0:4] + "/"
 	if not os.path.exists(yearDateDir):
@@ -98,55 +103,64 @@ def findPriceChanges(date, hours, demandFolder):
 	yearDateDir = "add-wind-prices/" + date[0:4] + "/" + date + "/"
 	if not os.path.exists(yearDateDir):
 		os.makedirs(yearDateDir)
+	else:
+		print "We already completed this date!"
+		return
 
-	# for i in xrange(1,25):
-	for i in xrange(1,2):
-		hourDemand = demands[i]
-		hourSupply = hours[i]
-		currYear = date[0:4]
+	print "Writing to directory " + str(yearDateDir)
+	for i in xrange(1,25):
+		try: 
+			hourDemand = demands[i]
+			hourSupply = hours[i]
+			currYear = date[0:4]
 
-		hourFile = yearDateDir + date + "_" + str(i) + "_adjWindPrices.csv"
+			hourFile = yearDateDir + date + "_" + str(i) + "_adjWindPrices.csv"
 
-		# go through the (price,quantity) pairs until you hit cleared demand
-		supplySum = 0.0
-		clearingIndex = -1
-		# this should go backwards from lowest to highest price
-		for p in xrange(len(hourSupply)): 
-			supplySum += float(hourSupply[p][1])
-			print "Hour supply pair: " + str(hourSupply[p])
-			print "Supply sum: " + str(supplySum)
-			if supplySum >= hourDemand:
-				print "Hour price: " + str(hourSupply[p][0]) 
-				clearingIndex = p
-				break
-
-		windAdded = 0
-		remainder = 0
-
-		# write the header
-		with open(hourFile, 'w') as fp:
-			writer = csv.writer(fp, delimiter=',')
-			writer.writerow(["MW Wind Added", "Price"])	
-			print "Writing to file " + hourFile
-			writer.writerow([0,hourSupply[p][0]])
-
-			for p in xrange(clearingIndex, -1, -1):
-				pair = hourSupply[p]
-				print "Pair in decrement: " + str(pair)
-				remainder = saveMWIncrement(writer, hourFile, windAdded, float(pair[1]), float(pair[0]), remainder)
-				windAdded += (float(pair[1]) - remainder)
-				if windAdded == hourDemand:
-					print "Demand fully met by wind. Ending write..."
+			# go through the (price,quantity) pairs until you hit cleared demand
+			supplySum = 0.0
+			clearingIndex = -1
+			# this should go backwards from lowest to highest price
+			for p in xrange(len(hourSupply)): 
+				supplySum += float(hourSupply[p][1])
+				# print "Hour supply pair: " + str(hourSupply[p])
+				# print "Supply sum: " + str(supplySum)
+				if supplySum >= hourDemand:
+					# print "Hour price: " + str(hourSupply[p][0]) 
+					clearingIndex = p
 					break
-				if pair[0] == 0.0 or pair[0] == '0':
-					print "Price hit 0. Ending write..."
-					break
+
+			windAdded = 0
+			remainder = 0
+
+			# write the header
+			with open(hourFile, 'w') as fp:
+				writer = csv.writer(fp, delimiter=',')
+				writer.writerow(["MW Wind Added", "Price"])	
+				# print "Writing to file " + hourFile
+				writer.writerow([0,hourSupply[p][0]])
+
+				for p in xrange(clearingIndex, -1, -1):
+					pair = hourSupply[p]
+					# print "Pair in decrement: " + str(pair)
+					remainder = saveMWIncrement(writer, hourFile, windAdded, float(pair[1]), float(pair[0]), remainder)
+					windAdded += (float(pair[1]) - remainder)
+					if windAdded == hourDemand:
+						# print "Demand fully met by wind. Ending write..."
+						break
+					if pair[0] == 0.0 or pair[0] == '0':
+						# print "Price hit 0. Ending write..."
+						break
+		except KeyError:
+			print "***********************************************************************"
+			print "WARNING: KEY ERROR FOR HOUR " + str(i) + " ON DATE " + str(myDate)
+			print "***********************************************************************"
+	print "Completed 24 hours."
 
 # Write the price changes for each bid's MW entirety to the file.
 def saveMWIncrement(writer, writePath, windAdded, quantity, price, remainder):
 	# print "Writing to path " + writePath
 	roundedQuantity = int(quantity+remainder) # rounds down
-	remainder = (quantity+remainder) - roundedQuantity
+	remainder = (float(quantity)+float(remainder)) - roundedQuantity
 	# with open(writePath, 'a') as fp:
 		# writer = csv.writer(fp, delimiter=',')
 	for q in xrange(1,roundedQuantity+1):
@@ -165,10 +179,14 @@ def saveDayHours(date, hours):
 	yearDateDir = "stacks/" + date[0:4] + "/" + date + "/"
 	if not os.path.exists(yearDateDir):
 		os.makedirs(yearDateDir)
+	else:
+		print "We already completed this date!"
+		return 1
 
+	print "Writing to directory " + yearDateDir
 	for hour in hours:
 		writePath = yearDateDir  + str(date) + "_hour" + str(hour) + "_" + "bidStack.csv"
-		print "Writing to path " + writePath 
+		# print "Writing to path " + writePath 
 		with open(writePath, 'w') as fp:
 			writer = csv.writer(fp, delimiter=',')
 			writer.writerow(["Price", "Quantity"])
@@ -176,6 +194,7 @@ def saveDayHours(date, hours):
 			for bid in bids:
 				row = [float(bid[0]),float(bid[1])]
 				writer.writerow(row)
+	return 0
 
 
 if __name__ == '__main__':
@@ -191,9 +210,9 @@ if __name__ == '__main__':
 
 	print "Folder: " + str(folder)
 	files = os.listdir(folder)
-	print "Files: " + str(files)
 	numFiles = len(files)
-	for i in xrange(numFiles):
+	print "Number of files: " + str(numFiles)
+	for i in xrange(1,numFiles):
 		path = folder + "/" + files[i]
 		constructBidStack(path, demandFolder)
 
