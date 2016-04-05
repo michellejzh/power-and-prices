@@ -5,6 +5,10 @@ import fileinput
 
 
 def constructBidStack(myFile, demandFolder):
+	if not "2014" in myFile:
+		print "Not 2014! Moving on..."
+		return
+
 	print "\n~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-"
 	print "Constructing bid stack..."
 	fileReader = open(myFile, "rU")
@@ -40,7 +44,10 @@ def constructBidStack(myFile, demandFolder):
 		hours[i] = sorted(hours[i], key=getKey, reverse=False)
 	myFile = (myFile.split('/'))[1]
 	date = myFile[:8]
-	if saveDayHours(date, hours) == 0:
+	# if saveDayHours(date, hours) == 0:
+		# findPriceChanges(date,hours, demandFolder)
+	if "2014" in date:
+		print "SAVING A 2014 THING"
 		findPriceChanges(date,hours, demandFolder)
 
 def getKey(item):
@@ -64,8 +71,11 @@ def findDemandFile(demandFolder, date):
 						# print "Returning " + str(demandFolder + yearFolders[y] + "/" + currFile)
 						return demandFolder + "/" + yearFolders[y] + "/" + currFile
 
+	print "*********************************************************"
 	print "ERROR: Demand file for date " + str(date) + " not found."
-	sys.exit()
+	print "*********************************************************"
+	# sys.exit()
+	return 0
 
 
 
@@ -74,6 +84,8 @@ def findPriceChanges(date, hours, demandFolder):
 	print "Finding incremental price changes for date " + str(date) + "..."
 	# load the file that has the cleared demand on it, by date
 	demandFile = findDemandFile(demandFolder, date)
+	if demandFile==0:
+		return
 	print "Opening file " + str(demandFile)
 	fileReader = open(demandFile, "rU")
 	reader  = csv.DictReader(fileReader)

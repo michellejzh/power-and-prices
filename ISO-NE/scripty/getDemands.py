@@ -12,7 +12,7 @@ def cutHeader(myFile):
 		underscored = fileSeg[2].split('_')
 		print underscored
 		dateLow = underscored[2]
-		dateHigh = underscored[3] 
+		dateHigh = underscored[3]
 
 		writePath = fileSeg[0] + "/" + fileSeg[1] + "/1_trimmed/" + dateLow + "-" + dateHigh[0:8] + "_TRIM_clearedDemand.csv"
 		with open(writePath, 'w') as fp:
