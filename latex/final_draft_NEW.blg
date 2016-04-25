@@ -1,0 +1,21 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'final_draft_NEW.blg'
+[48] biber-darwin:276> INFO - === Sun Apr 17, 2016, 21:01:00
+[48] Biber.pm:333> INFO - Reading 'final_draft_NEW.bcf'
+[149] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[166] Biber.pm:2977> INFO - Processing section 0
+[181] Biber.pm:3115> INFO - Looking for bibtex format file 'mz_bib.bib' for section 0
+[187] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[190] bibtex.pm:895> INFO - Found BibTeX data source 'mz_bib.bib'
+[227] Utils.pm:146> WARN - The field 'note' in entry 'Jonsson2010313' cannot be null, deleting it
+[228] Utils.pm:146> WARN - The field 'number' in entry 'OFlaherty2014103' cannot be null, deleting it
+[228] Utils.pm:146> WARN - The field 'note' in entry 'Kanamura20071010' cannot be null, deleting it
+[229] Utils.pm:146> WARN - The field 'note' in entry 'Ketterer2014270' cannot be null, deleting it
+[229] Utils.pm:146> WARN - The field 'number' in entry 'Ketterer2014270' cannot be null, deleting it
+[537] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[537] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[537] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[537] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[621] bbl.pm:505> INFO - Writing 'final_draft_NEW.bbl' with encoding 'ascii'
+[626] bbl.pm:596> INFO - Output to final_draft_NEW.bbl
+[626] Biber.pm:106> INFO - WARNINGS: 5

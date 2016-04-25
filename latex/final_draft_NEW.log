@@ -1,0 +1,874 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 APR 2016 14:19
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**final_draft_NEW.tex
+(./final_draft_NEW.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@float@type=\count91
+\float@exts=\toks17
+\float@box=\box26
+\@floatcapt=\box27
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks18
+\flrow@foot=\insert233
+\FB@wd=\dimen120
+\FBo@wd=\dimen121
+\FBc@wd=\dimen122
+\FBo@ht=\skip43
+\FBc@ht=\skip44
+\FBf@ht=\skip45
+\FBo@max=\skip46
+\FBc@max=\skip47
+\FBf@max=\skip48
+\c@FBl@b=\count92
+\floatbox@depth=\count93
+\c@FRobj=\count94
+\c@FRsobj=\count95
+\Xhsize=\skip49
+\sXhsize=\skip50
+\Zhsize=\skip51
+\sZhsize=\skip52
+\flrow@rowbox=\box28
+\FR@Zunitlength=\dimen123
+\c@FBcnt=\count96
+\FPOScnt=\count97
+\LTleft=\skip53
+\LTright=\skip54
+\LTleft=\skip55
+\LTright=\skip56
+\flrow@types=\toks19
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+\c@ContinuedFloat=\count98
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+)
+\c@subfigure=\count99
+\c@subtable=\count100
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count101
+\c@ALG@rem=\count102
+\c@ALG@nested=\count103
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count104
+\c@ALG@blocknr=\count105
+\c@ALG@storecount=\count106
+\c@ALG@tmpcounter=\count107
+\ALG@tmplength=\skip59
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\c@algorithm=\count108
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/A
+B)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count109
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count110
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count111
+\c@listtotal=\count112
+\c@listcount=\count113
+\c@liststart=\count114
+\c@liststop=\count115
+\c@citecount=\count116
+\c@citetotal=\count117
+\c@multicitecount=\count118
+\c@multicitetotal=\count119
+\c@instcount=\count120
+\c@maxnames=\count121
+\c@minnames=\count122
+\c@maxitems=\count123
+\c@minitems=\count124
+\c@citecounter=\count125
+\c@savedcitecounter=\count126
+\c@uniquelist=\count127
+\c@uniquename=\count128
+\c@refsection=\count129
+\c@refsegment=\count130
+\c@maxextratitle=\count131
+\c@maxextratitleyear=\count132
+\c@maxextrayear=\count133
+\c@maxextraalpha=\count134
+\c@abbrvpenalty=\count135
+\c@highnamepenalty=\count136
+\c@lownamepenalty=\count137
+\c@maxparens=\count138
+\c@parenlevel=\count139
+\blx@tempcnta=\count140
+\blx@tempcntb=\count141
+\blx@tempcntc=\count142
+\blx@maxsection=\count143
+\blx@maxsegment@0=\count144
+\blx@notetype=\count145
+\blx@parenlevel@text=\count146
+\blx@parenlevel@foot=\count147
+\blx@sectionciteorder@0=\count148
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count149
+\c@maxcomprange=\count150
+\c@mincompwidth=\count151
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex citestyle data model...
+Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex bibstyle data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count152
+\c@savedafterword=\count153
+\c@annotator=\count154
+\c@savedannotator=\count155
+\c@author=\count156
+\c@savedauthor=\count157
+\c@bookauthor=\count158
+\c@savedbookauthor=\count159
+\c@commentator=\count160
+\c@savedcommentator=\count161
+\c@editor=\count162
+\c@savededitor=\count163
+\c@editora=\count164
+\c@savededitora=\count165
+\c@editorb=\count166
+\c@savededitorb=\count167
+\c@editorc=\count168
+\c@savededitorc=\count169
+\c@foreword=\count170
+\c@savedforeword=\count171
+\c@holder=\count172
+\c@savedholder=\count173
+\c@introduction=\count174
+\c@savedintroduction=\count175
+\c@namea=\count176
+\c@savednamea=\count177
+\c@nameb=\count178
+\c@savednameb=\count179
+\c@namec=\count180
+\c@savednamec=\count181
+\c@translator=\count182
+\c@savedtranslator=\count183
+\c@shortauthor=\count184
+\c@savedshortauthor=\count185
+\c@shorteditor=\count186
+\c@savedshorteditor=\count187
+\c@labelname=\count188
+\c@savedlabelname=\count189
+\c@institution=\count190
+\c@savedinstitution=\count191
+\c@lista=\count192
+\c@savedlista=\count193
+\c@listb=\count194
+\c@savedlistb=\count195
+\c@listc=\count196
+\c@savedlistc=\count197
+\c@listd=\count198
+\c@savedlistd=\count199
+\c@liste=\count200
+\c@savedliste=\count201
+\c@listf=\count202
+\c@savedlistf=\count203
+\c@location=\count204
+\c@savedlocation=\count205
+\c@organization=\count206
+\c@savedorganization=\count207
+\c@origlocation=\count208
+\c@savedoriglocation=\count209
+\c@origpublisher=\count210
+\c@savedorigpublisher=\count211
+\c@publisher=\count212
+\c@savedpublisher=\count213
+\c@language=\count214
+\c@savedlanguage=\count215
+\c@pageref=\count216
+\c@savedpageref=\count217
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count218
+\c@textcitetotal=\count219
+\c@textcitemaxnames=\count220
+\c@biburlnumpenalty=\count221
+\c@biburlucpenalty=\count222
+\c@biburllcpenalty=\count223
+\c@smartand=\count224
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count225
+\c@bbx:relatedtotal=\count226
+))
+Package biblatex Info: Trying to load citation style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
+File: authoryear-comp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip74
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen124
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen125
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count227
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count228
+\leftroot@=\count229
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count230
+\DOTSCASE@=\count231
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen126
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count232
+\c@MaxMatrixCols=\count266
+\dotsspace@=\muskip11
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks21
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks22
+\eqnshift@=\dimen127
+\alignsep@=\dimen128
+\tagshift@=\dimen129
+\tagwidth@=\dimen130
+\totwidth@=\dimen131
+\lineht@=\dimen132
+\@envbody=\toks23
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count272
+\@quotereset=\count273
+
+(./final_draft_NEW.aux
+
+LaTeX Warning: Label `tab1' multiply defined.
+
+
+LaTeX Warning: Label `tab1' multiply defined.
+
+
+LaTeX Warning: Label `tab1' multiply defined.
+
+
+LaTeX Warning: Label `tab1' multiply defined.
+
+)
+\openout1 = `final_draft_NEW.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count274
+\scratchdimen=\dimen133
+\scratchbox=\box31
+\nofMPsegments=\count275
+\nofMParguments=\count276
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count277
+\MPscratchDim=\dimen134
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: floatrow package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout3 = `final_draft_NEW.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'final_draft_NEW.bbl' found.
+
+(./final_draft_NEW.bbl)
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2]
+ [3] [4]
+[5] [6]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 115.
+
+<figures/rmix_yearly.jpg, id=30, 1548.78625pt x 1126.2075pt>
+File: figures/rmix_yearly.jpg Graphic file (type jpg)
+
+<use figures/rmix_yearly.jpg>
+Package pdftex.def Info: figures/rmix_yearly.jpg used on input line 117.
+(pdftex.def)             Requested size: 284.52756pt x 206.88445pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 120.
+
+<figures/rmix_seasonal.jpg, id=31, 1548.78625pt x 1126.2075pt>
+File: figures/rmix_seasonal.jpg Graphic file (type jpg)
+
+<use figures/rmix_seasonal.jpg>
+Package pdftex.def Info: figures/rmix_seasonal.jpg used on input line 122.
+(pdftex.def)             Requested size: 312.9803pt x 227.5746pt.
+
+
+LaTeX Warning: Text page 7 contains only floats.
+
+[7 <./figures/rmix_yearly.jpg> <./figures/rmix_seasonal.jpg>]
+Missing character: There is no ò in font cmr10!
+ [8]
+Missing character: There is no í in font cmr10!
+Missing character: There is no í in font cmr10!
+ [9]
+Missing character: There is no í in font cmr10!
+ [10]
+[11] <figures/simple_supply_demand.jpg, id=47, 1351.0475pt x 982.67125pt>
+File: figures/simple_supply_demand.jpg Graphic file (type jpg)
+
+<use figures/simple_supply_demand.jpg>
+Package pdftex.def Info: figures/simple_supply_demand.jpg used on input line 17
+1.
+(pdftex.def)             Requested size: 341.43306pt x 248.3362pt.
+ [12] [13 <./figures/simple_supply_demand.jpg>] <figures/demand-price.jpg, id=6
+0, 1471.4975pt x 1071.00125pt>
+File: figures/demand-price.jpg Graphic file (type jpg)
+
+<use figures/demand-price.jpg>
+Package pdftex.def Info: figures/demand-price.jpg used on input line 180.
+(pdftex.def)             Requested size: 426.79134pt x 310.63144pt.
+
+<figures/daily_fluc.png, id=61, 866.23625pt x 660.4675pt>
+File: figures/daily_fluc.png Graphic file (type png)
+
+<use figures/daily_fluc.png>
+Package pdftex.def Info: figures/daily_fluc.png used on input line 188.
+(pdftex.def)             Requested size: 455.24408pt x 347.10335pt.
+
+Overfull \hbox (25.23946pt too wide) in paragraph at lines 188--190
+ [][] 
+ []
+
+[14] [15 <./figures/demand-price.jpg>] [16 <./figures/daily_fluc.png>] [17]
+<figures/bid2014.jpg, id=76, 1316.92pt x 957.5775pt>
+File: figures/bid2014.jpg Graphic file (type jpg)
+ <use figures/bid2014.jpg>
+Package pdftex.def Info: figures/bid2014.jpg used on input line 203.
+(pdftex.def)             Requested size: 312.9803pt x 227.57314pt.
+
+<figures/bid2010.jpg, id=77, 915.42pt x 666.49pt>
+File: figures/bid2010.jpg Graphic file (type jpg)
+ <use figures/bid2010.jpg>
+Package pdftex.def Info: figures/bid2010.jpg used on input line 209.
+(pdftex.def)             Requested size: 312.9803pt x 227.86465pt.
+
+
+LaTeX Warning: Text page 18 contains only floats.
+
+
+Overfull \vbox (2.9853pt too high) has occurred while \output is active []
+
+
+[18 <./figures/bid2014.jpg> <./figures/bid2010.jpg>] [19]
+<figures/add5000mw.jpg, id=85, 1351.0475pt x 982.67125pt>
+File: figures/add5000mw.jpg Graphic file (type jpg)
+
+<use figures/add5000mw.jpg>
+Package pdftex.def Info: figures/add5000mw.jpg used on input line 227.
+(pdftex.def)             Requested size: 341.43306pt x 248.3362pt.
+ [20] [21 <./figures/add5000mw.jpg>] [22] [23]
+[24] [25] [26] [27] [28] [29]
+<figures/actual-calculated-diff.jpg, id=118, 1351.0475pt x 982.67125pt>
+File: figures/actual-calculated-diff.jpg Graphic file (type jpg)
+
+<use figures/actual-calculated-diff.jpg>
+Package pdftex.def Info: figures/actual-calculated-diff.jpg used on input line 
+292.
+(pdftex.def)             Requested size: 284.52756pt x 206.93683pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 296.
+
+<figures/calc_actual_residuals.jpg, id=119, 1399.2275pt x 1017.8025pt>
+File: figures/calc_actual_residuals.jpg Graphic file (type jpg)
+
+<use figures/calc_actual_residuals.jpg>
+Package pdftex.def Info: figures/calc_actual_residuals.jpg used on input line 2
+98.
+(pdftex.def)             Requested size: 284.52756pt x 206.95805pt.
+ [30] [31 <./figures/actual-calculated-diff.jpg> <./figures/calc_actual_residua
+ls.jpg>]
+<figures/top1wind.png, id=127, 744.7825pt x 684.5575pt>
+File: figures/top1wind.png Graphic file (type png)
+
+<use figures/top1wind.png>
+Package pdftex.def Info: figures/top1wind.png used on input line 310.
+(pdftex.def)             Requested size: 369.88582pt x 339.97989pt.
+ [32 <./figures/top1wind.png>]
+<figures/med1wind.png, id=132, 702.625pt x 635.37375pt>
+File: figures/med1wind.png Graphic file (type png)
+
+<use figures/med1wind.png>
+Package pdftex.def Info: figures/med1wind.png used on input line 318.
+(pdftex.def)             Requested size: 369.88582pt x 334.48755pt.
+
+<figures/bottom1wind.png, id=133, 725.71124pt x 664.4825pt>
+File: figures/bottom1wind.png Graphic file (type png)
+
+<use figures/bottom1wind.png>
+Package pdftex.def Info: figures/bottom1wind.png used on input line 324.
+(pdftex.def)             Requested size: 369.88582pt x 338.6788pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 <./figures/med1wind.png>] [34 <./figures/bottom1wind.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
+[]\OT1/cmr/m/n/10.95 Median gas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
+[]\OT1/cmr/m/n/10.95 Median gas
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 410--410
+[]\OT1/cmr/m/n/10.95 Median gas
+ []
+
+[36] <figures/low-med-high-gas.jpg, id=152, 1351.0475pt x 982.67125pt>
+File: figures/low-med-high-gas.jpg Graphic file (type jpg)
+
+<use figures/low-med-high-gas.jpg>
+Package pdftex.def Info: figures/low-med-high-gas.jpg used on input line 436.
+(pdftex.def)             Requested size: 341.43306pt x 248.3362pt.
+ [37 <./figures/low-med-high-gas.jpg>]
+[38] [39] [40]
+Overfull \hbox (14.55612pt too wide) in paragraph at lines 455--455
+[][][]\OT1/cmr/m/n/10.95 (2015c). \OT1/cmr/m/it/10.95 Pric-ing Re-ports: Zonal 
+In-for-ma-tion\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : 
+$\OT1/cmtt/m/n/10.95 http : / / www . iso -[] ne . com / isoexpress /
+ []
+
+
+Overfull \hbox (11.9114pt too wide) in paragraph at lines 455--455
+[][][]\OT1/cmr/m/n/10.95 (2016b). \OT1/cmr/m/it/10.95 In-ter-nal Mar-ket Mon-i-
+tor\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : $\OT1/cmtt/
+m/n/10.95 http : / / www . iso -[] ne . com / markets -[] operations /
+ []
+
+[41]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 454.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 454.
+ [42]
+[43] <figures/rt_vs_da.jpg, id=177, 1471.4975pt x 1071.00125pt>
+File: figures/rt_vs_da.jpg Graphic file (type jpg)
+
+<use figures/rt_vs_da.jpg>
+Package pdftex.def Info: figures/rt_vs_da.jpg used on input line 461.
+(pdftex.def)             Requested size: 341.43306pt x 248.49861pt.
+ (./resourceRegress.tex
+
+LaTeX Warning: Float too large for page by 68.96533pt on input line 41.
+
+) (./windRegress.tex
+
+LaTeX Warning: Float too large for page by 123.4355pt on input line 44.
+
+) (./gasRegress.tex
+
+LaTeX Warning: Float too large for page by 123.4355pt on input line 44.
+
+) [1 <./figures/rt_vs_da.jpg>] [2] [3] [4] (./seasonSummary.tex
+Overfull \hbox (53.29367pt too wide) in paragraph at lines 3--14
+ [][] 
+ []
+
+) (./nonWindBids.tex) (./priceDiff.tex) [48] [49] [50] (./final_draft_NEW.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'final_draft_NEW.run.xml'.
+\openout1 = `final_draft_NEW.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10762 strings out of 493089
+ 177919 string characters out of 6134842
+ 606486 words of memory out of 5000000
+ 14069 multiletter control sequences out of 15000+600000
+ 16416 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,11n,58p,1697b,965s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_draft_NEW.pdf (51 pages, 7298023 bytes).
+PDF statistics:
+ 270 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+

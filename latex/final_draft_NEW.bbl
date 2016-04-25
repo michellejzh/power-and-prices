@@ -1,0 +1,747 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{m.a.bernsteinj.griffin2006}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=95c9984dd2b159adb6975fed869f1430}{Bernstein}{B\bibinitperiod}{M.A.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=902742a3224c39943d4ceac445dba150}{Griffin}{G\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9f2fc7dd61acb096287535a3263a0922}
+      \strng{fullhash}{9f2fc7dd61acb096287535a3263a0922}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2006}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National Renewable Energy Laboratory}
+      \field{month}{02}
+      \field{title}{Regional Differences in the Price-Elasticity of Demand for Energy}
+      \field{year}{2006}
+    \endentry
+    \entry{Clo201579}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=92860783b3d977b6cb791a2b137785e1}{Clo}{C\bibinitperiod}{Stefano}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=34ca2f001c623fdcf531d62c6ee71985}{Cataldi}{C\bibinitperiod}{Alessandra}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ebd8f94fc6f2f007a3b4d6b00eafaddc}{Zoppoli}{Z\bibinitperiod}{Pietro}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{afce06845fe85568f2f738a5a2733846}
+      \strng{fullhash}{98f4a68c652f83729339dd2539f80379}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0301-4215}
+      \field{journaltitle}{Energy Policy}
+      \field{title}{The merit-order effect in the Italian power market: The impact of solar and wind generation on national wholesale electricity prices}
+      \field{volume}{77}
+      \field{year}{2015}
+      \field{pages}{79\bibrangedash 88}
+      \range{pages}{10}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.enpol.2014.11.038
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0301421514006661
+      \endverb
+      \keyw{Italian wholesale power market}
+    \endentry
+    \entry{Cludius2014302}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=a346530d4ccf0aa54af2d4d81069c4d1}{Cludius}{C\bibinitperiod}{Johanna}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a1c4d1153dbfcb9b8b6bb52bfbd531ee}{Hermann}{H\bibinitperiod}{Hauke}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2cd510811734d8089d86192281eecaf8}{Matthes}{M\bibinitperiod}{Felix\bibnamedelima Chr.}{F\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=080961b2e943545f36b09cd10ad0b8b8}{Graichen}{G\bibinitperiod}{Verena}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{263e087d6a991f0a918cc8c2617238d4}
+      \strng{fullhash}{dfd5656db26f6abfea3819e704fa389b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{The merit order effect of wind and photovoltaic electricity generation in Germany 2008-2016: Estimation and distributional implications}
+      \field{volume}{44}
+      \field{year}{2014}
+      \field{pages}{302\bibrangedash 313}
+      \range{pages}{12}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.eneco.2014.04.020
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0140988314001042
+      \endverb
+      \keyw{Distributional implications}
+    \endentry
+    \entry{michaelcoulonsamhowison2008}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=81b90280bda6978f7fc40590df422b91}{Coulon}{C\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5ca9f9a0adad60ff4535be5f4784f6e7}{Howison}{H\bibinitperiod}{Sam}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{34b9f523504e62c1df835609cc7bc823}
+      \strng{fullhash}{34b9f523504e62c1df835609cc7bc823}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2008}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Energy Markets}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Stochastic behavior of the electricity bid stack: from fundamental drivers to power prices}
+      \field{volume}{2}
+      \field{year}{2008}
+    \endentry
+    \entry{jerryelmer2014}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=377cd152592c7ec5519c63b77a80febe}{Elmer}{E\bibinitperiod}{Jerry}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Conservation Law Foundation}%
+      }
+      \strng{namehash}{377cd152592c7ec5519c63b77a80febe}
+      \strng{fullhash}{377cd152592c7ec5519c63b77a80febe}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2014}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{Working with the ISO to Integrate Renewable Energy in New England}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.clf.org/blog/renewable-energy-in-new-england/
+      \endverb
+    \endentry
+    \entry{jerryelmer2015interview}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=377cd152592c7ec5519c63b77a80febe}{Elmer}{E\bibinitperiod}{Jerry}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Conservation Law Foundation}%
+      }
+      \strng{namehash}{377cd152592c7ec5519c63b77a80febe}
+      \strng{fullhash}{377cd152592c7ec5519c63b77a80febe}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2015}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Personal Communication}
+      \field{month}{11}
+      \field{note}{Staff Attorney at Conservation Law Foundation}
+      \field{title}{Personal interview}
+      \field{year}{2015}
+    \endentry
+    \entry{robertethiervamsichadalavada2009}{online}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=60ca8ffca7924733d824cdca2474db69}{Ethier}{E\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cbd9a02361c61eced37d6bb6ce2fa2fd}{Chadalavada}{C\bibinitperiod}{Vamsi}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2d961e319a381fc8666813f225ab5a82}
+      \strng{fullhash}{2d961e319a381fc8666813f225ab5a82}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2009}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{ISO on Background - Wholesale Pricing in New England and Summer 2009 Operations}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.iso-ne.com/nwsiss/pr/2009/10.5_final_master_2009_october_ethier_chadalavada_background_presentation.pdf
+      \endverb
+    \endentry
+    \entry{christophergeissler2016}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=049aa646901972dc06756ba561d85ab1}{Geissler}{G\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{049aa646901972dc06756ba561d85ab1}
+      \strng{fullhash}{049aa646901972dc06756ba561d85ab1}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Personal Communication}
+      \field{month}{04}
+      \field{note}{Economist at ISO New England}
+      \field{title}{Email Correspondence}
+      \field{year}{2016}
+    \endentry
+    \entry{isonewengland2013lmp}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelyear}{2013}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{FAQs: Locational Marginal Pricing}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www.iso-ne.com/participate/support/faq/lmp
+      \endverb
+    \endentry
+    \entry{isonewengland2015offer}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelyear}{2014}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Pricing Reports: Day-Ahead Energy Offer Data}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.iso-ne.com/isoexpress/web/reports/pricing/-/tree/day-ahead-energy-offer-data
+      \endverb
+    \endentry
+    \entry{isonewengland2015outlook}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{1}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ISO New England}
+      \field{title}{2015 Regional Electricity Outlook}
+      \field{year}{2015}
+    \endentry
+    \entry{isonewengland2015fuel}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{2}
+      \field{labelyear}{2015}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{Operations Reports: Daily Generation by Fuel Type}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.iso-ne.com/isoexpress/web/reports/operations/-/tree/daily-gen-fuel-type
+      \endverb
+    \endentry
+    \entry{isonewengland2015zonal}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{3}
+      \field{labelyear}{2015}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Pricing Reports: Zonal Information}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.iso-ne.com/isoexpress/web/reports/pricing/-/tree/zone-info
+      \endverb
+    \endentry
+    \entry{isonewengland2016queue}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{1}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Interconnection Request Queue}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.iso-ne.com/system-planning/transmission-planning/interconnection-request-queue
+      \endverb
+    \endentry
+    \entry{isonewengland2016imm}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{2}
+      \field{labelyear}{2016}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Internal Market Monitor}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.iso-ne.com/markets-operations/market-monitoring-mitigation/internal-monitor
+      \endverb
+    \endentry
+    \entry{isonewengland2016keygrid}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{3}
+      \field{labelyear}{2016}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Key Grid and Market Stats}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.iso-ne.com/about/key-stats
+      \endverb
+    \endentry
+    \entry{isonewengland2016roles}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=230026c38c56a797cfe97b94a8dcc426}{{ISO\bibnamedelimb New\bibnamedelimb England}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{230026c38c56a797cfe97b94a8dcc426}
+      \strng{fullhash}{230026c38c56a797cfe97b94a8dcc426}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{extrayear}{4}
+      \field{labelyear}{2016}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Our Three Critical Roles}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.iso-ne.com/about/what-we-do/three-roles
+      \endverb
+    \endentry
+    \entry{isonewenglandinternalmarketmonitor2012}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5c97c504d9c5ce258c0a185e59ab5c5d}{{ISO\bibnamedelimb New\bibnamedelimb England\bibnamedelimb Internal\bibnamedelimb Market\bibnamedelimb Monitor}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5c97c504d9c5ce258c0a185e59ab5c5d}
+      \strng{fullhash}{5c97c504d9c5ce258c0a185e59ab5c5d}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelyear}{2012}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ISO New England}
+      \field{month}{05}
+      \field{title}{Overview of New England's Wholesale Electricity Markets and Market Oversight}
+      \field{year}{2012}
+    \endentry
+    \entry{conservationlawfoundation2014}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9ad860ae70684aead3729d7e2ae99d8e}{Jerry\bibnamedelima Elmer}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{Conservation\bibnamedelimb Law\bibnamedelima Foundation}{C\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9ad860ae70684aead3729d7e2ae99d8e}
+      \strng{fullhash}{9ad860ae70684aead3729d7e2ae99d8e}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2014}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Exciting News on Renewables in New England}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.clf.org/blog/exciting-news-renewables-new-england/
+      \endverb
+    \endentry
+    \entry{Jonsson2010313}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=07708331ebe13ae1dfc231488e82c569}{Jonsson}{J\bibinitperiod}{Tryggvi}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f868152a252ba8f399a537f3a95cf9f3}{Pinson}{P\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ac5d1263fca18a1f2d85317607e7d734}{Madsen}{M\bibinitperiod}{Henrik}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32e12c4b3b4aac60280c9fc66ea5d0d3}
+      \strng{fullhash}{89917546f46afcc36993ae689114abf2}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{number}{2}
+      \field{title}{On the market impact of wind energy forecasts}
+      \field{volume}{32}
+      \field{year}{2010}
+      \field{pages}{313\bibrangedash 320}
+      \range{pages}{8}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.eneco.2009.10.018
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0140988309002011
+      \endverb
+      \keyw{Conditional distributions}
+    \endentry
+    \entry{Kanamura20071010}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=663857071550026f1c1f77c3c62b2451}{Kanamura}{K\bibinitperiod}{Takashi}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3ea3c20586d157e084b3f03d3ebdbbc}{Ohashi}{O\bibinitperiod}{Kazuhiko}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dfab557b58b1a1dc4c482877c6769092}
+      \strng{fullhash}{dfab557b58b1a1dc4c482877c6769092}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{number}{5}
+      \field{title}{A structural model for electricity prices with spikes: Measurement of spike risk and optimal policies for hydropower plant operation}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{pages}{1010\bibrangedash 1032}
+      \range{pages}{23}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.eneco.2006.05.012
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0140988306000600
+      \endverb
+      \keyw{Optimal plant operation}
+    \endentry
+    \entry{Ketterer2014270}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=376bc4d656b1429c4c4413260532f741}{Ketterer}{K\bibinitperiod}{Janina\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{376bc4d656b1429c4c4413260532f741}
+      \strng{fullhash}{376bc4d656b1429c4c4413260532f741}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{The impact of wind power generation on the electricity price in Germany}
+      \field{volume}{44}
+      \field{year}{2014}
+      \field{pages}{270\bibrangedash 280}
+      \range{pages}{11}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.eneco.2014.04.003
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0140988314000875
+      \endverb
+      \keyw{GARCH}
+    \endentry
+    \entry{martinezanido2014impact}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=594eeb6a0827326b1829549a4490bbab}{Martinez-Anido}{M\bibinithyphendelim A\bibinitperiod}{Brancucci}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9bce147872014965a531500da2666847}{C.}{C\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=b4619de37da3d2b45ebe61d0a78ff8e2}{Hodge}{H\bibinitperiod}{B.\bibnamedelimi M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d632bfb78867ded823103bfd0661af94}
+      \strng{fullhash}{5feb3973bc0f1643e986776e24ba4bb9}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Impact of Utility-Scale Distributed Wind on Transmission-Level System Operations}
+      \field{year}{2014}
+    \endentry
+    \entry{kjellg.nyborgulrichbindseililyaa.strebulaev2002}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=8e0b3eaef91e495832c97acdb23dd586}{Nyborg}{N\bibinitperiod}{Kjell\bibnamedelima G.}{K\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=97964dbd6f0b8562d8b7a7642be779eb}{Bindseil}{B\bibinitperiod}{Ulrich}{U\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9b386b04df53af02939da9d510b5aae2}{Strebulaev}{S\bibinitperiod}{Ilya\bibnamedelima A.}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{31f722cb0c612b7141f760304287893e}
+      \strng{fullhash}{e5555be19f79df5e330f7f0451c7a2d9}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{2002}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Central Bank Working Paper Series}
+      \field{month}{07}
+      \field{title}{Bidding and Performance in Repo Auctions: Evidence From ECB Open Market Operations}
+      \field{year}{2002}
+    \endentry
+    \entry{OFlaherty2014103}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=883ea50540df3967152638232b2ccf41}{O'Flaherty}{O\bibinitperiod}{Micheal}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=edfcc2769e5eb9c37c70eaf70e53cefc}{Riordan}{R\bibinitperiod}{Niall}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f5cf9ab2a5f70a5f70ed153d19f6678f}{O'Neill}{O\bibinitperiod}{Noel}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d17b04b733480a0a4486f0831719105}{Ahern}{A\bibinitperiod}{Ciara}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9af7b470f2c4b444837e8ed2285c9293}
+      \strng{fullhash}{c753b046eb1a9f0351af5805318c9789}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1876-6102}
+      \field{journaltitle}{Energy Procedia}
+      \field{note}{Renewable Energy Research Conference, \{RERC\} 2014}
+      \field{title}{A Quantitative Analysis of the Impact of Wind Energy Penetration on Electricity Prices in Ireland}
+      \field{volume}{58}
+      \field{year}{2014}
+      \field{pages}{103\bibrangedash 110}
+      \range{pages}{8}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.egypro.2014.10.415
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1876610214017822
+      \endverb
+      \keyw{Ireland.}
+    \endentry
+    \entry{theeuropeanwindenergyassociation2016}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=006589e5e5020256c42ec3b06a804edc}{{The\bibnamedelimb European\bibnamedelimb Wind\bibnamedelimb Energy\bibnamedelimb Association}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{006589e5e5020256c42ec3b06a804edc}
+      \strng{fullhash}{006589e5e5020256c42ec3b06a804edc}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2016}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Wind energy's frequently asked questions}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.ewea.org/wind-energy-basics/faq/
+      \endverb
+    \endentry
+    \entry{5373907}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=786ed035b5aea10496fa2736696ee05b}{Troy}{T\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03fa88bc51aae46bc2a1c6aecfb6f977}{Denny}{D\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=580113981dda1d8e333fb90c129104f1}{O'Malley}{O\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6d40020a4e977bb5f4d56f8cbfb09cf0}
+      \strng{fullhash}{7afad61aea4894817f39e319c1430693}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2010}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0885-8950}
+      \field{journaltitle}{IEEE Transactions on Power Systems}
+      \field{month}{05}
+      \field{number}{2}
+      \field{title}{Base-Load Cycling on a System With Significant Wind Penetration}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{pages}{1088\bibrangedash 1097}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TPWRS.2009.2037326
+      \endverb
+      \keyw{load forecasting;sensitivity analysis;wind power plants;base load cycling;base load generating units;electricity sector deregulation;outages;power system interconnection;scheduling model;sensitivity analysis;wind penetration;wind power generation;Costs;interconnected power systems;power system modeling;pumped storage power generation;thermal power generation;wind power generation}
+    \endentry
+    \entry{usdepartmentofenergy2015}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5d8b19ec34585d0618d99c465f23d8e5}{{US\bibnamedelimb Department\bibnamedelimb of\bibnamedelimb Energy}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5d8b19ec34585d0618d99c465f23d8e5}
+      \strng{fullhash}{5d8b19ec34585d0618d99c465f23d8e5}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{2015}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{US Department of Energy}
+      \field{month}{03}
+      \field{title}{Wind Vision: A New Era for Wind Power in the United States}
+      \field{year}{2015}
+    \endentry
+    \entry{usenergyinformationadministration2011}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0e1e20d3d14dfc2096534d74a11976b}{{US\bibnamedelimb Energy\bibnamedelimb Information\bibnamedelimb Administration}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \strng{fullhash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{2011}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{About 60 percent of the U.S. electric power supply is managed by RTOs}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.eia.gov/todayinenergy/detail.cfm?id=790
+      \endverb
+    \endentry
+    \entry{usenergyinformationadministration2013}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0e1e20d3d14dfc2096534d74a11976b}{{US\bibnamedelimb Energy\bibnamedelimb Information\bibnamedelimb Administration}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \strng{fullhash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{2013}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{US Energy Information Administration}
+      \field{month}{01}
+      \field{title}{Short-Term Energy Outlook Supplement: Constraints in New England likely to affect regional energy prices this winter}
+      \field{year}{2013}
+    \endentry
+    \entry{usenergyinformationadministration2015}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0e1e20d3d14dfc2096534d74a11976b}{{US\bibnamedelimb Energy\bibnamedelimb Information\bibnamedelimb Administration}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \strng{fullhash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{2015}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{US Energy Information Administration}
+      \field{month}{04}
+      \field{title}{Annual Energy Outlook 2015}
+      \field{year}{2015}
+    \endentry
+    \entry{henryhub2016}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0e1e20d3d14dfc2096534d74a11976b}{{US\bibnamedelimb Energy\bibnamedelimb Information\bibnamedelimb Administration}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \strng{fullhash}{d0e1e20d3d14dfc2096534d74a11976b}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Henry Hub Natural Gas Spot Price}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm
+      \endverb
+    \endentry
+    \entry{worldnuclearassociation2015}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=6002d8861df91c9e398840704739e16b}{{World\bibnamedelimb Nuclear\bibnamedelimb Association}}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{6002d8861df91c9e398840704739e16b}
+      \strng{fullhash}{6002d8861df91c9e398840704739e16b}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2015}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Cooling Power Plants}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.world-nuclear.org/information-library/current-and-future-generation/cooling-power-plants.aspx
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

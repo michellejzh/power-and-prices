@@ -1,0 +1,164 @@
+\documentclass[11pt, oneside]{article}      % use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                       % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                          % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                       % Activate for rotated page geometry
+%\usepackage[parfill]{parskip}          % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}               % Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+                                % TeX will automatically convert eps --> pdf in pdflatex        
+\usepackage{amssymb}
+\usepackage[capposition=top]{floatrow}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+% To compile bibliography, in Terminal
+% $ latex filename
+% $ biber filename
+% $ latex filename
+
+% Additional Packages
+% Bibliography Package:
+\usepackage[% comment spaces as biblatex sometimes dislikes them a lot
+        natbib=true,% just this for natbib compatibility - don't load natbib itself
+        bibstyle=authoryear,%
+        citestyle=authoryear-comp,%
+        %hyperref=true,%
+        citetracker=true,
+        backend=biber,%
+        maxbibnames=1,%
+        firstinits=true,%
+        uniquename=init,%
+        maxcitenames=2,%
+        maxbibnames=10,
+        parentracker=true,%
+        url=false,%
+        doi=false,%
+        isbn=false,%
+        eprint=false,%
+       % backref=true,%
+            ]  {biblatex}\addbibresource{mz_bib.bib}
+\AtEveryCitekey{\ifciteseen{}{\defcounter{maxnames}{99}}}
+
+\usepackage{amsmath}
+\linespread{1.6}
+\usepackage{comment}
+
+\begin{document}
+
+\begin{center}
+\begin{tabular}{ |p{5cm}||p{5cm}|p{5cm}|p{5cm}|  }
+ \hline
+Demand & Mean price (\$/MW)\\
+ \hline
+Bottom 25\% (Q1) & \$33.339 \\
+ \hline
+Lower middle 25\% (Q2) & \$43.001 \\
+ \hline
+Upper middle 25\% (Q3) & \$46.951 \\
+ \hline
+Top 25\% (Q4) & \$69.940 \\
+ \hline
+Top 5\% & \$73.029 \\
+ \hline
+Top 1\% & \$99.404 \\
+ \hline
+\end{tabular}
+\end{center}
+
+%first
+ \begin{center}
+\begin{tabular}{ |p{2.5cm}||p{3.4cm}|p{3.4cm}|p{3.4cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{$\Delta$ in price per 100 MW added, for 0-1,500 MW of additional wind} \\
+ \hline
+Demand & Low gas (g$\leq$42.1\%) & Median gas (4.21\%$<$g$\leq$53.4\%) & High gas (g$>$53.4\%) \\
+ \hline
+Q1 & -\$0.268 & -\$0.146 & -\$0.121 \\
+ \hline
+Q2 & -\$0.366 & -\$0.218 & -\$0.188 \\
+ \hline
+Q3 & -\$0.398 & -\$0.261 & -\$0.243 \\
+ \hline
+Q4 & -\$0.658 & -\$0.437 & -\$0.505 \\
+ \hline
+Top 5\% & -\$1.681 & -\$0.694 & -\$0.777 \\
+ \hline
+Top 1\% & -\$1.218$\dagger$ & -\$1.218 & \it{-\$1.334 (P=0.004)} \\
+ \hline
+\end{tabular}
+\end{center}
+
+%second
+ \begin{center}
+\begin{tabular}{ |p{2.5cm}||p{3.4cm}|p{3.4cm}|p{3.4cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{$\Delta$ in price per 100 MW added, for 1,500-3,000 MW of additional wind} \\
+ \hline
+Demand & Low gas (g$\leq$42.1\%) & Median gas (4.21\%$<$g$\leq$53.4\%) & High gas (g$>$53.4\%) \\
+ \hline
+Q1 & -\$0.382 & -\$0.170 & -\$0.208 \\
+ \hline
+Q2 & -\$0.431 & -\$0.176 & -\$0.128 \\
+ \hline
+Q3 & -\$0.368 & -\$0.206 & -\$0.173 \\
+ \hline
+Q4 & -\$0.528 & -\$0.337 & -\$0.382 \\
+ \hline
+Top 5\% & -\$0.904 & -\$0.542 & -\$0.587 \\
+ \hline
+Top 1\% & -\$0.965$\dagger$ & -\$0.965 & \it{-\$1.036 (P=0.040)} \\
+ \hline
+\end{tabular}
+\end{center}
+
+%third
+ \begin{center}
+\begin{tabular}{ |p{2.5cm}||p{3.4cm}|p{3.4cm}|p{3.4cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{$\Delta$ in price per 100 MW added, for 3,000-5,000 MW of additional wind} \\
+ \hline
+Demand & Low gas (g$\leq$42.1\%) & Median gas (4.21\%$<$g$\leq$53.4\%) & High gas (g$>$53.4\%) \\
+ \hline
+Q1 & -\$0.725 & -\$0.491 & -\$0.433 \\
+ \hline
+Q2 & -\$0.784 & -\$0.172 & -\$0.131 \\
+ \hline
+Q3 & -\$0.449 & -\$0.156 & -\$0.119 \\
+ \hline
+Q4 & -\$0.519 & -\$0.238 & -\$0.258 \\
+ \hline
+Top 5\% & -\$0.689 & -\$0.364 & \it{-\$0.383 (P=0.001)} \\
+ \hline
+Top 1\% & -\$0.686$\dagger$ & -\$0.686 & -\$0.655 (P=0.138) \\
+ \hline
+\end{tabular}
+\end{center}
+
+\footnotesize
+$\dagger$ = collinear with the median gas value\\
+Each one of these coefficients has P=0.00 except for the italicized entries, which have their P-value written beside them.
+
+\newpage
+
+\pagenumbering{gobble}
+\input{resourceRegress.tex}
+\input{windRegress.tex}
+\input{gasRegress.tex}
+\newpage
+
+\setcounter{page}{48}
+\pagenumbering{arabic}
+\setcounter{page}{48}
+\input{seasonSummary.tex}
+\input{nonWindBids.tex}
+\input{priceDiff.tex}
+
+
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+
+
+\pagebreak
+\pagebreak
+\end{document}
+\end{document}
