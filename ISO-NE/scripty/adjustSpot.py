@@ -50,6 +50,7 @@ def savePairs(writePath, pairs, dates):
 			writer.writerow(line)
 			print "Saving " + str(line)
 			prevVal = val
+	
 
 
 
